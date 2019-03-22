@@ -16,11 +16,11 @@ class ViewController2: UIViewController {
         let view2 = UIView()
         let view3 = UIView()
         let view4 = UIView()
-        view.mt_splitHorizontallyByViews([view1,view2,view3,view4], edge: UIEdgeInsets(top: 20, left: 30, bottom: 40, right: 50), gap: 5)
-        view1.backgroundColor = UIColor.greenColor()
-view2.backgroundColor = UIColor.blueColor()
-        view3.backgroundColor = UIColor.purpleColor()
-        view4.backgroundColor = UIColor.redColor()
+        view.mt_splitHorizontallyByViews(views: [view1,view2,view3,view4], edge: UIEdgeInsets(top: 20, left: 30, bottom: 40, right: 50), gap: 5)
+        view1.backgroundColor = UIColor.greenColor
+        view2.backgroundColor = UIColor.blueColor
+        view3.backgroundColor = UIColor.purpleColor
+        view4.backgroundColor = UIColor.redColor
 
         
     }
