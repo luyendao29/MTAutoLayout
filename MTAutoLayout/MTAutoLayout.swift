@@ -393,15 +393,20 @@ extension UIView {
             self.translatesAutoresizingMaskIntoConstraints = false
         }
         let constraint = NSLayoutConstraint(item: self,
+<<<<<<< HEAD
                                             attribute: NSLayoutConstraint.Attribute.Width,
                 relatedBy: NSLayoutRelation.Equal,
+=======
+                                            attribute: NSLayoutConstraint.Attribute.width,
+                                            relatedBy: NSLayoutConstraint.Relation.equal,
+>>>>>>> 81aeba313247e4c2dfe22ac519eaa891fc2c8622
                 toItem: nil,
-                attribute: NSLayoutAttribute.NotAnAttribute,
+                attribute: NSLayoutConstraint.Attribute.notAnAttribute,
                 multiplier: 1,
                 constant: width)
             constraint.identifier = kConstraintType.outerEqualWidth
       
-        constraint.priority = priority
+        constraint.priority = UILayoutPriority(rawValue: priority)
         self.addConstraint(constraint)
         return constraint
     }
@@ -413,15 +418,15 @@ extension UIView {
         }
         
         let constraint = NSLayoutConstraint(item: self,
-                attribute: NSLayoutAttribute.Height,
-                relatedBy: NSLayoutRelation.Equal,
+                                            attribute: NSLayoutConstraint.Attribute.height,
+                                            relatedBy: NSLayoutConstraint.Relation.equal,
                 toItem: nil,
-                attribute: NSLayoutAttribute.NotAnAttribute,
+                attribute: NSLayoutConstraint.Attribute.notAnAttribute,
                 multiplier: 1,
                 constant: height)
             constraint.identifier = kConstraintType.innerEqualHeight
         
-        constraint.priority = priority
+        constraint.priority = UILayoutPriority(rawValue: priority)
         self.addConstraint(constraint)
         return constraint
 
@@ -434,7 +439,7 @@ extension UIView {
         }
         
         let constraint = NSLayoutConstraint(item: self,
-            attribute: NSLayoutAttribute.Height,
+                                            attribute: NSLayoutConstraint.Attribute.Height,
             relatedBy: NSLayoutRelation.Equal,
             toItem: view,
             attribute: NSLayoutAttribute.Height,
@@ -718,7 +723,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -736,7 +741,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -754,7 +759,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -772,7 +777,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -790,7 +795,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -808,7 +813,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -826,7 +831,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -843,7 +848,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -861,7 +866,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -879,7 +884,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -897,7 +902,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -915,7 +920,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -935,7 +940,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -953,7 +958,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -971,7 +976,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
@@ -990,7 +995,7 @@ extension UIView {
         dict[constraint2.identifier!] = constraint2
         
         if let _size = size {
-            let sizeConstraint = mt_SetSize (_size)
+            let sizeConstraint = mt_SetSize (size:_size)
             for (key, constraint) in sizeConstraint{
                 dict[key] = constraint
             }
